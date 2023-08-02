@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/34dd6eb61a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="K.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>Kshitij</span> Oza <br>From India</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="WhatsApp Image 2023-04-22 at 14.28.17.jpg" alt="">
+                </div>
+                <div class="about-col2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Welcome to my personal portfolio! My name is Kshitij Oza and I am a Frontend Developer.I am
+                        currently pursuing my BTech From Charusat University in Computer Engineering Department. I am
+                        constantly striving to improve and expand my knowledge in the industry. Thank you for taking the
+                        time to view my portfolio, and I look forward to connecting with you.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links  active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Eduacation</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>Javascript</span><br>Learning JS Currently</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <P>Currently None</P>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>College Name</span><br>Charusat University</li>
+                            <li><span>School</span><br>St Xavier's School Gandhinagar</li>
+                            <li><span>Javascript</span><br>Learning JS Currently</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio debitis nemo reiciendis
+                        asperiores, dolorum odit exercitationem assumenda! Nihil commodi, laborum impedit cupiditate
+                        odio ipsam delectus at perferendis quaerat repellendus libero!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio debitis nemo reiciendis
+                        asperiores, dolorum odit exercitationem assumenda! Nihil commodi, laborum impedit cupiditate
+                        odio ipsam delectus at perferendis quaerat repellendus libero!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio debitis nemo reiciendis
+                        asperiores, dolorum odit exercitationem assumenda! Nihil commodi, laborum impedit cupiditate
+                        odio ipsam delectus at perferendis quaerat repellendus libero!</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Work1.png" alt="">
+                    <div class="layer">
+                        <h3>Notes App</h3>
+                        <p>This Notes allows you to keep notes and write data.</p>
+                        <a href="https://github.com/kshitij0504/Notesapp"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/newnetflixicon.jpg" alt="">
+                    <div class="layer">
+                        <h3>Netflix-Clone App</h3>
+                        <p>This is a clone app of Netflix created using HTML and CSS.</p>
+                        <a href="https://github.com/kshitij0504/Netflix-Clone-Website"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                    <div class="work">
+                        <img src="images/joshua-aragon-BMnhuwFYr7w-unsplash.jpg" alt="">
+                        <div class="layer">
+                            <h3>Profile Card</h3>
+                            <p>This is a small project of mine made a responsive profile card using HTML CSS and JS.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="subtitle">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i> kshitijoza04@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> 6357570224</p>
+                        <div class="social-icons">
+                            <a href="https://instagram.com/kshitij._.04?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://twitter.com/KshitijO20733?t=MXS1y-xhpJvGSDnPUh1Q3Q&s=09"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/kshitij-oza-746b86264"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/kshitij0504"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="images/CV_TEMPLATE_0002.docx" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message"
+                            rows="10" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright <i class="fa-regular fa-copyright"></i> Kshitij</p>
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-links");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-links");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right ="0";
+            }
+            function closemenu(){
+                sidemenu.style.right="-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbynK5oYECWDTnpp_UlzgehR9LYYRABUDjtG4KP65pEUNu36pdLO1t9OiW0xJn3Xme1H/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+</body>
+
+</html>
